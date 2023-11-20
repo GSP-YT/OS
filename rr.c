@@ -23,15 +23,14 @@ int main(){
 			   if(bt[j] > slice){
 				   temp += slice;
 				   bt[j] -= slice;
-               tat[j] = temp;
+				   tat[j] = temp;
+			   } else {
+				   temp += bt[j];
+				   tat[j] = temp;
+				   bt[j] = 0;
 			   }
-		      else{
-			      temp += bt[j];
-               tat[j] = temp;
-			      bt[j] = 0;
-		      }
-			}
-		}
+		   }
+	   }
    }
    for(i=0;i<n;i++){
       wt[i] = tat[i] - Bt[i];
