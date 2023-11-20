@@ -13,7 +13,7 @@ int main(){
       tat[i] = 0;
       if(max < bt[i]){
          max = bt[i];
-      }  
+      }
    }
    printf("Enter Time Slice : ");
    scanf("%d", &slice);
@@ -30,7 +30,7 @@ int main(){
                tat[j] = temp;
 			      bt[j] = 0;
 		      }
-			}      
+			}
 		}
    }
    for(i=0;i<n;i++){
